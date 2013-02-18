@@ -16,7 +16,7 @@ Installation
 
 > DWOLLA_SECRET=[INSERT SECRET HERE]
 
-2. Run ./sbt if you're using Max or Linux, or sbt.bat if you're using Windows.  Simple Built Tool will automatically download and install any needed dependencies (including Scala).
+2. Run ./sbt if you're using Mac or Linux, or sbt.bat if you're using Windows.  Simple Built Tool will automatically download and install any needed dependencies (including Scala).
 3. At the SBT prompt (>) type: container:start then wait a few seconds for everything to compile.
 4. That's it!  Visit http://127.0.0.1:8080/
 
