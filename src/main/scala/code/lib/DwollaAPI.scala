@@ -45,7 +45,7 @@ class AccountManager(accessToken:String) extends Connector {
   def checkBalance:Option[String] = {
     val endpointURL:String = "https://www.dwolla.com/oauth/rest/balance/?oauth_token=%s"
     // make call:
-    val response:String = makeCall(endpointURL.format(accessToken))
+    val response:String = makeCall(endpointURL.format(URLEncoder.encode(accessToken, "UTF-8")))
     // parse JSON:
     val parsedResponse = parse(response).asInstanceOf[JObject].values
     //check if operation was successful and return balance, else return None
