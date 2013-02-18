@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # use glob syntax.
 syntax: glob
 *.ser
@@ -53,3 +54,18 @@ project/boot
 # Pax Runner (for easy OSGi launching)
 runner
 
+=======
+*.class
+*.log
+
+# sbt specific
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+
+# Scala-IDE specific
+.scala_dependencies
+>>>>>>> d094eac8086d1ce901d8b91561ee677ef9dc30ce
