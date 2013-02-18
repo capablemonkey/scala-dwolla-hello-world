@@ -1,4 +1,4 @@
-name := "Dwolla: Hello World"
+name := "Dwolla Hello World"
 
 version := "0.1"
 
