@@ -74,7 +74,7 @@ class Authenticator(clientKey:String, secret:String, redirect:String) extends Co
      */
     val response_type:String = "code"
     val url_format:String = "authenticate?client_id=%s&response_type=%s&redirect_uri=%s&scope=%s"
-    DwollaBaseURL + url_format.format(clientKey, response_type, redirect, scope)
+    DwollaBaseURL + url_format.format(URLEncoder.encode(clientKey, "UTF-8"), response_type, redirect, scope)
   }
   
   def getAccessToken(verification_code:String):Option[String] = {
